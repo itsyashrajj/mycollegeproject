@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cs_department</title>
+    <script src="https://kit.fontawesome.com/c13aa8743f.js" crossorigin="anonymous"></script>
+   
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
+        body{
+          margin: 0;
+          padding: 0;
+          font-family: Arial, Helvetica, sans-serif;
+          background-size: 100% 100%;
+          }
+       .heading{
+          padding:50px;
+          color: black;
+          text-shadow: 0px 5px 10px white;
+          background-image: url(night.jpeg);
+          background-repeat: no-repeat;
+			    background-size: 100% 100%;
+          animation-name: myani;
+          animation-duration: 50s;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+        }
+         @keyframes myani{
+          13%{background-image: url(clginfra1.jpg);}
+          26%{background-image: url(clginfra2.jpg);}
+          39%{background-image: url(clginfra3.jpg);}
+          51%{background-image: url(clginfra4.jpg);}
+          68%{background-image: url(clginfra5.jpg);}
+          81%{background-image: url(clginfra6.jpg);}
+          94%{background-image: url(clginfra7.jpg);}
+          100%{background-image: url(clginfra8.jpg);}
+        }
+        main{
+         
+            width: 80%;
+            background-color: white;
+            margin: 0 auto;
+            padding: 12px;
+            box-shadow: 0px 10px 10px black;
+           }
+        footer{
+			    text-align: center;
+			    color: #fff;
+			    background-color: black;
+			    padding: 50px;
+			    background-color: #007bff;
+        }
+          h2{
+            color: black;
+           font-size: 15px;
+            background-color: white ;
+            box-shadow: 0px 0px 5px black;
+            border-radius: 20px;
+            text-align: center;
+          }
+          mark{
+           color: white;
+          }
+          img{
+            width: 40%;
+            position: relative;
+            left: 30%;
+             clip-path: circle(50% at 50% 50%);
+          }
+          .hod{
+            text-align: center;
+          }
+          .name{
+            text-align: center;
+            color: white;
+            margin-left: 20%;
+            padding: 0.5cm 0.5cm;
+            width: 60%;
+            margin-top: 5cm;
+            }
+            .partone{
+              display: flex;
+             
+             }
+            
+            .links{
+            width: 20%;
+            align-items: center;
+            justify-content: space-evenly;
+            margin: 0 auto;
+            border-radius: 5px;
+            padding: 10px 20px;
+            background-color: #fff;
+            box-shadow: 0px 10px 15px black;
+            margin-top: 1cm;
+            margin-bottom: 1cm;
+            }
+            h2:hover{
+              color: red;
+            }
+            .links:hover{
+              transform: scale(1.3);
+              z-index: 1;
+              transition: 0.5s;
+            }
+            marquee{
+              color: black;
+              background-color: white;
+              box-shadow: 0px 10px 10px black;
+             padding: 12px 24px;
+            }
+            img{
+             clip-path: circle(50% at 50% 50%);
+             display: flex;
+             justify-content: center;
+			       text-align: center;
+            }
+           button{
+              padding: 6px;
+              text-align: center;
+              color: white;
+              background-color: #3b5998;
+              border-color:white;
+              cursor: pointer;
+            }
+            button:hover{
+              color: black;
+            }
+            nav {
+              position: sticky;
+              top: 0px;
+            display: flex;
+            padding: 12px 24px;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin-top: 0.5cm;
+            background-color: white;
+            box-shadow: 0px 10px 10px black;
+            }
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+li {
+  position: relative;
+  margin-right: 20px;
+}
+
+li:hover > ul {
+  visibility: visible;
+  opacity: 1;
+}
+
+a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+}
+
+ul ul {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transition: all 0.3s ease-in-out;
+  z-index: 999;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  min-width: 200px;
+}
+
+ul ul li {
+  width: 100%;
+  text-align: left;
+  margin: 0;
+}
+
+ul ul a:hover {
+  background: #f8f8f8;
+  color: #333;
+}
+.next-button{
+            z-index: 1;
+            position: fixed;
+            top: 80%;
+            right: 3rem;
+            background-color:#007bff ;
+            padding: 3PX;
+            border-radius: 4px;
+            border: none;
+        }
+       
+       
+        
+</style>
+<body>   
+
+  
+        <div class="heading" id="heading">
+        <h3 class="name">
+          <img src="holkarlogo.png" alt="collrgelogo">
+          <u> Goverment Holkar (Model Autonomous) Science <br>
+            College, Indore (MP) <br></u>
+            COMPUTER SCIENCE DEPARTMENT
+        </h3>
+      </div>
+
+
+       <marquee direction="left"><i class="fa-solid fa-flask"></i>---------<i class="fa-sharp fa-solid fa-cloud-bolt"></i>----------<i class="fa-solid fa-leaf"></i>--------<i class="fa-solid fa-microchip"></i>---------<i class="fa-solid fa-computer-speaker"></i>-------<i class="fa-solid fa-download"></i>---------<i class="fa-solid fa-share-from-square"></i>---------<i class="fa-solid fa-hashtag"></i>---------<i class="fa-regular fa-laptop"></i>----------<i class="fa-solid fa-book-open-reader"></i>-------<i class="fa-solid fa-computer-speaker"></i>-------<i class="fa-solid fa-download"></i>---------<i class="fa-solid fa-share-from-square"></i>---------<i class="fa-solid fa-hashtag"></i>---------<i class="fa-regular fa-laptop"></i>----------<i class="fa-solid fa-book-open-reader"></i>
+       </marquee><br><br>
+
+        <!--THIS IS THE ABOUT SECTION IE DETAILS OF THE CS DEPARTMENT-->
+
+       <main id="info">
+        <h2>ABOUT</h2>
+        <P style="margin-top: 0.5cm;">The Department of Computer Science was independently established in academic year 2000-2001. The department since then has endeavored into promoting technical education and scientific research in the important and fast growing branches of computer science and its application. It is an autonomous department under Government Holkar (Model Autonomous) Science College, Indore (M.P.) affiliated DAVV, Indore with its goal set to produce computer science specialists to meet the universal challenges.
+            The courses [BCA, B.Sc. Computer Science, M.Sc. Computer Science and PGDCA] offered in our department rightly reflect our missions. We produce global quality IT professionals and our alumina are a part of top companies of world. We pay more attention on analytical skills, problem solving and communication skills. Theory is complemented by practicals. More than 100 students involved in honorary software development for Government and Non Government organizations.</P><br>
+              <img src="hod.jpeg" alt="head">
+              <p class="hod"><b>HEAD OF DEPARTMENT</b> <br>
+                 Dr. Pradeep Sharma</p>
+       </main><br><br>
+
+         <!--THIS IS THE HEADING FOR THE SERVICES AVAILABLE-->
+
+         <nav>
+          <ul>
+           <li><a href="index.html"> <i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="#info"><i class="fa-solid fa-user"></i> About</a></li>
+            <li><a href="#"><i class="fa-solid fa-book-open-reader"></i> Services</a>
+              <ul>
+                <li><a href="#third"><i class="fa-solid fa-graduation-cap"></i> BSC</a></li>
+                <li><a href="#second"><i class="fa-solid fa-graduation-cap"></i> MSC</a></li>
+                <li><a href="#first"><i class="fa-solid fa-graduation-cap"></i> BCA</a></li>
+              </ul>
+            </li>
+           <li><a href="contact.html"><i class="fa-solid fa-comment"></i> Feedback</a></li>
+          </ul>
+        </nav><br><br>
+        
+
+
+       <h1 style="text-align: center;color: white;justify-content: center;padding: 12px 24px; background-color: black;">BCA ( Bachelors's in Computer Application)</h1>
+
+       <!--THIS IS THE SECITON FOR SIXTH SEMESTER STUDENTS-->
+       <div class="partone" id="first" style="background-color: grey;">
+     
+       <div class="links"  style="text-align: center;justify-content: center; background-color: yellowgreen;">
+          <h2>BCA 6TH SEMESTER</h2>
+          <p><a href="opr.pdf"><button>Operations Research</button></a>
+          <p><a href="graphics.pdf"><button>Computer Graphics & Multimedia</button></a>
+          <p><a href="mangment.pdf"><button>principles & Practice of Managment</button></a>
+          <p><a href="php.pdf"><button>Internet & Web Technology Using PHP</button></a>
+          </p>
+         </div>
+        
+     
+
+       <!--THIS IS THE SECTION FOR THE FIFITH SEMESTER STUDENTS-->
+       <div class="links" style="text-align: center;justify-content: center; background-color: blue;">
+        <h2>BCA 5TH SEMESTER</h2>
+        <p><a href="Data science.pdf"><button>Introduction to Datascience</button></a>
+        <p><a href="mathematics.pdf"><button>Linear Algebra & Geometry</button></a>
+        <p><a href="ethics.pdf"><button>Human Values & Professional Ethics</button></a>
+        <p><a href="ITT.pdf"><button>Information Technology Trends</button></a>
+        <p><a href="Computer networking.pdf"><button>Computer Networks</button></a>
+        <p><a href="cloud computing.pdf"><button>Introduction to Cloud Computing</button></a>
+        </p>
+       </div>
+
+       <!--THIS IS THE SECTION FOR THE FOURTH SEMESTER STUDENTS-->
+       <div class="links" style="text-align: center;justify-content: center;background-color: coral;">
+        <h2>BCA 4TH SEMESTER</h2>
+        <p><a href="software engineering 4sem bca.pdf"><button>software engineering</button></a>
+        <p><a href="english language 4sem bca.pdf"><button> English language</button></a>
+        <p><a href="data structure 4sem bca.pdf"><button>Data Structure</button></a>
+        <p><a href="web designing 4sem bca.pdf"><button>Web designing</button></a>
+        <p><a href="conum 4sem bca.pdf"><button>Conum</button></a>
+        </p>
+       </div>
+     </div>
+
+       <!--THIS IS THE SECTION FOR THE THIRD SEMESTER STUDENTS-->
+       <div class="partone" style="background-color: grey;">
+
+       <div class="links"  style="text-align: center;justify-content: center;background-color: #4caf50;">
+        <h2>BCA 3TH SEMESTER</h2>
+        <p><a href="BCA 3rd .pdf"><button>Internet Application Using Java Programming-Mi</button></a>
+        <p><a href="BCA 3rd(1).pdf"><button>E- Commerce -Oe</button></a>
+        <p><a href="BCA 3rd(2).pdf"><button>Web Designing- Vc</button></a>
+        <p><a href="c++ programming 3sem bca.pdf"><button>c++ Programming</button></a>
+        <p><a href="operating system 3sem bca.pdf"><button>OPerating system</button></a>
+        </p>
+       </div>
+
+       <!--THIS IS THE SECTION FOR THE SECOND SEMESTE STUDENTS-->
+       <div class="links"  style="text-align: center;justify-content: center; background-color: deepskyblue;">
+        <h2>BCA 2TH SEMESTER</h2>
+        <p><a href="accounting 2sem bca.pdf"><button>Accounting & Managment</button></a>
+        <p><a href="entrapreneur 2sem bca.pdf"><button>Entrepreneur </button></a>
+        <p><a href="c programming 2sem bca.pdf"><button>C programming</button></a>
+        <p><a href="bsc 2nd 7.pdf"><button>Programming Methodology & Data Structure-Ma</button></a>
+        <p><a href="bsc 2nd 8.pdf"><button>Operating System-Mi</button></a>
+        </p>
+       </div>
+
+       <!--THIS IS THE SECTIOI FOR THE FIRST SEMESTE STUDENTS-->
+       <div class="links"  style="text-align: center;justify-content: center; background-color: pink;">
+        <h2>BCA 1TH SEMESTER</h2>
+        <p><a href="c programming 1sem bca.pdf"><button>C programming</button></a>
+        <p><a href="communication skill 1sem bca.pdf"><button> Communication & Managment</button></a>
+        <p><a href="computer fundamental 1sem bca.pdf"><button>Computer fundamental</button></a>
+        <p><a href="digital computer electronics 1sem bca.pdf"><button> Digital computer & electronics</button></a>
+        <p><a href="pc software 1sem bca.pdf"><button> Pc software</button></a>
+      
+        </p>
+       </div>
+      </div>
+
+
+      <h1 style="text-align: center;color: white;justify-content: center; padding: 12px 24px; background-color: black;">MSc (Master of Science)</h1>
+
+       <!--THIS IS THE SECITON FOR SIXTH SEMESTER STUDENTS-->
+       <div class="partone" id="second" style="background-color: grey;">
+
+       
+       <!--THIS IS THE SECTION FOR THE FOURTH SEMESTER STUDENTS-->
+       <div class="links" style="text-align: center;justify-content: center;background-color: coral;">
+        <h2>MSc 4TH SEMESTER</h2>
+        <p><a href="MSc 4th.pdf"><button>Design & Analysis of Algorithm-I</button></a>
+        <p><a href="MSc 4th(1).pdf"><button>Compiler Design</button></a>
+        <p><a href="MSc 4th(2).pdf"><button>Internet & web technology</button></a>
+        <p><a href="MSc 4th(3).pdf"><button>Design & Analysis of Algorithm-II</button></a>
+        <p><a href="MSc 4th(4).pdf"><button>Internet & web technology-II</button></a>
+        </p>
+       </div>
+
+      </div>
+
+       <!--THIS IS THE SECTION FOR THE THIRD SEMESTER STUDENTS-->
+       <div class="partone" style="background-color: grey;">
+       <div class="links"  style="text-align: center;justify-content: center;background-color: #4caf50;">
+        <h2>MSc 3TH SEMESTER</h2>
+        <p><a href="advance prog in c 3sem msc.pdf"><button>Advanced programming in c</button></a>
+        <p><a href="operations resecrch 3sem msc.pdf"><button>Operation research</button></a>
+        <p><a href="data mining ang data watehouse 3sem msc.pdf"><button>Data mining & data warehouse</button></a>
+        <p><a href="mathematics graph theory 3sem msc.pdf"><button>Mathematics Graph theory</button></a>
+        <p><a href="chemistry application of spectroscopy 3sem msc.pdf"><button>Chemistry application of spectroscopy</button></a>
+        </p>
+       </div>
+
+       <!--THIS IS THE SECTION FOR THE SECOND SEMESTE STUDENTS-->
+       <div class="links"  style="text-align: center;justify-content: center; background-color: deepskyblue;">
+        <h2>MSc 2TH SEMESTER</h2>
+        <p><a href="programming in c 2sem msc.pdf"><button>Programming in c</button></a>
+        <p><a href="organic chemistry 2sem msc.pdf"><button>Organic chemistry</button></a>
+        <p><a href="data structure and algo 2sem msc.pdf"><button>Data structure</button></a>
+        <p><a href="computer network and window 2sem msc.pdf"><button>Computer network & window</button></a>
+        <p><a href="advanced extract algebra mathematics 2sem msc.pdf"><button>Advanced Algebra Mathematics</button></a>
+     
+        </p>
+       </div>
+
+       <!--THIS IS THE SECTIOI FOR THE FIRST SEMESTE STUDENTS-->
+       <div class="links"  style="text-align: center;justify-content: center; background-color: pink;">
+        <h2>MSc 1TH SEMESTER</h2>
+        <p><a href="com and comm funda msc.pdf"><button>Computer & Communication fundamental</button></a>
+        <p><a href="MSc paper 1.pdf"><button>Discrete Structure</button></a>
+        <p><a href="os msc.pdf"><button>Operating System</button></a>
+        <p><a href="c lang msc.pdf"><button>Problem solving through C</button></a>
+        </p>
+       </div>
+      </div>
+
+
+      <h1 style="text-align: center;color: white;justify-content: center;padding: 12px 24px; background-color: black;">BSc (Bachelors's of Science)</h1>
+
+       <!--THIS IS THE SECITON FOR SIXTH SEMESTER STUDENTS-->
+       <div class="partone" id="third" style="background-color: grey;">
+
+        <div class="links"  style="text-align: center;justify-content: center; background-color: yellowgreen;">
+          <h2>BSc 6TH SEMESTER</h2>
+          <p><a href="compouter moniter and graphics 6sem bsc.pdf"><button>Computer moniter & Graphics</button></a>
+          <p><a href="aquaculture and environment 6sem bsc.pdf"><button>Aquaculture & Environment
+          </button></a>
+          <p><a href="communication electronics 6sem bsc.pdf"><button>Communication electronics</button></a>
+          <p><a href="applied biotechnology 6sem bsc.pdf"><button>Applied biotechnology</button></a>
+          <p><a href="web designing 6sem bsc.pdf"><button>Web designing</button></a>
+          </p>
+         </div>
+     
+
+       <!--THIS IS THE SECTION FOR THE FIFITH SEMESTER STUDENTS-->
+       <div class="links" style="text-align: center;justify-content: center; background-color: blue;">
+        <h2>BSC 5TH SEMESTER</h2>
+        <p><a href="linear algebra numerical analysis 5sem bsc.pdf"><button>Linear algebra & Numerical analysis</button></a>
+        <p><a href="computer application 5sem bsc.pdf"><button>Computer application</button></a>
+        <p><a href="basic of computer it 5sem bsc.pdf"><button>Basic of computer IT</button></a>
+        <p><a href="applied statistics 5sem bsc.pdf"><button>Applied statictics</button></a>
+        <p><a href="mathematics 5sem bsc.pdf"><button>Mathematics</button></a>
+       
+        </p>
+       </div>
+
+       <!--THIS IS THE SECTION FOR THE FOURTH SEMESTER STUDENTS-->
+       <div class="links" style="text-align: center;justify-content: center;background-color: coral;">
+        <h2>BSc 4TH SEMESTER</h2>
+        <p><a href="waves accoustic and optics 4sem bsc.pdf"><button>Waves acoustic & optics</button></a>
+        <p><a href="cs operting sys concept 4sem bsc.pdf"><button>CS operating system concept</button></a>
+        <p><a href="environmental studied 4sem bsc.pdf"><button>Environmental studied</button></a>
+        <p><a href="sampling technique 4sem bsc.pdf"><button>Sampling technique</button></a>
+        <p><a href="advances calculas 4sem bsc.pdf"><button>Advanced calculas</button></a>
+        </p>
+       </div>
+      </div>
+
+
+       <!--THIS IS THE SECTION FOR THE THIRD SEMESTER STUDENTS-->
+       <div class="partone" style="background-color: grey;">
+  
+       <div class="links"  style="text-align: center;justify-content: center;background-color: #4caf50;">
+        <h2>BSc 3TH SEMESTER</h2>
+        <p><a href="calculas differential eq mechanism 3sem bsc.pdf"><button>differential eq & mechanism</button></a>
+        <p><a href="digital electronics and fundamental 3sem bsc.pdf"><button> Digital electronics</button></a>
+        <p><a href="cpp and data structrure 3sem bsc.pdf"><button>Cpp and data structure</button></a>
+        <p><a href="moral value and language 3sem bsc.pdf"><button>Moral value & language</button></a>
+          <p><a href="statistic 3sem bsc.pdf"><button>statistic</button></a>
+        </p>
+       </div>
+
+       <!--THIS IS THE SECTION FOR THE SECOND SEMESTE STUDENTS-->
+       <div class="links"  style="text-align: center;justify-content: center; background-color: deepskyblue;">
+        <h2>BSc 2TH SEMESTER</h2>
+        <p><a href="bsc 2nd 1.pdf"><button>Programming Methodology & Data Structure-Ma</button></a>
+        <p><a href="bsc 2nd 2.pdf"><button>Computer System Architecture-Mi</button></a>
+        <p><a href="bsc 2nd 3.pdf"><button>Programming Methodology & Data Structure-Oe</button></a>
+        <p><a href="bsc 2nd 4.pdf"><button>Multimedia & Animation-II</button></a>
+        <p><a href="bsc 2nd 5.pdf"><button>Data Structure</button></a>
+        <p><a href="bsc 2nd 6.pdf"><button>OOP`s Through C++</button></a>
+        </p>
+       </div>
+
+       <!--THIS IS THE SECTIOI FOR THE FIRST SEMESTE STUDENTS-->
+       <div class="links"  style="text-align: center;justify-content: center; background-color: pink;">
+        <h2>BSc 1TH SEMESTER</h2>
+        <p><a href="bsc 1st.pdf"><button>Computer System Architecture-Oe</button></a>
+        <p><a href="bsc 1st 2.pdf"><button>Multimedia & Animation-I-Oe</button></a>
+        <p><a href="bsc 1st 3.pdf"><button>Computer System Architecture-Ma</button></a>
+        <p><a href="bsc 1st 4.pdf"><button>Programming Methodology & Data Structure-Mi</button></a>
+          <p><a href="bsc 1st update .pdf"><button>Yoga & Meditation </button></a>
+        </p>
+       </div>
+    </div>
+
+
+      <div class="fontawe">
+        <button class="next-button">
+         <a href="#heading"><i style="color: white;" class="fa-sharp fa-solid fa-chevron-up"></i></a>
+        </button>
+      </div>
+
+
+<!--THIS IS THE FOOTER SECTION IE COPYRIGHT PART-->
+       <footer>
+        <p class="copyright">Copyright © 2023 , Govt. Holkar Science College Indore / All Rights Reserved</p><br>
+   
+   <details>
+    <summary>Contact</summary><br><br>
+    <div style="display: flex;justify-content: space-between;background-color:#007bff;padding: 12px 25px;box-shadow: 0px 0px 5px white;">
+      <p style="border-radius: 4px;background-color: white;margin-top: 0.1cm;width: 30%;color: black;padding: 5px 10px;">E-Mail<i class="fa-regular fa-at"></i> : principalhsc@rediffmail.com</p>
+      <p style="border-radius: 4px;background-color: white;margin-top: 0.1cm;width: 30%;color: black;padding: 5px 10px;">E-Mail<i class="fa-regular fa-at"></i>  : principal@collegeholkar.org</p>
+      <p style="border-radius: 4px;background-color: white;margin-top: 0.1cm;width: 30%;color: black;padding: 5px 10px;">Contact No.<i class="fa-solid fa-phone-volume"></i>: Ph. 0731-2464111 , 0731-2764027</p>
+   </div>
+   </details>
+</footer>  
+
+    
+      
+</body>
+</html>
